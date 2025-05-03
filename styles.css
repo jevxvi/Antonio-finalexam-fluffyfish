@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e90ff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+#gameContainer {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    border: 2px solid #333;
+    overflow: hidden;
+}
+#gameCanvas {
+    display: block;
+}
+#score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000;
+}
+#startScreen, #gameOver, #offline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+#startScreen h1, #gameOver h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+}
+#startScreen p, #gameOver p {
+    margin: 5px 0;
+}
+#startScreen button, #gameOver button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #32cd32;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+#startScreen button:hover, #gameOver button:hover {
+    background: #28a428;
+}
+#offline {
+    background: rgba(255, 0, 0, 0.8);
+}
